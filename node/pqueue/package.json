@@ -1,0 +1,16 @@
+{
+  "name": "pqueue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "test": "jest --coverage --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jest/globals": "^26.1.0",
+    "jest": "^26.1.0"
+  }
+}

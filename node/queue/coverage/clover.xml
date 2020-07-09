@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1594174554203" clover="3.2.0">
+  <project timestamp="1594174554203" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="14" coveredelements="14" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+    <file name="JSQueue.js" path="/Users/jas/Development/data-structures-algorithms/node/queue/src/types/JSQueue.js">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="5" count="8" type="stmt"/>
+      <line num="7" count="5" type="stmt"/>
+      <line num="9" count="15" type="stmt"/>
+      <line num="11" count="5" type="stmt"/>
+      <line num="13" count="5" type="stmt"/>
+      <line num="19" count="29" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
