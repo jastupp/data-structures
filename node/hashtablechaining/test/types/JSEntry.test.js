@@ -24,13 +24,13 @@ describe('Test JSEntry class', () => {
     test('The equal method', () => {
         expect(entry().equal(new JSEntry(key(), value()))).toBeTruthy();
     });
-    
+
     const entry = () => mEntry === null ? mEntry = new JSEntry(key(), value()) : mEntry;
 
     const key = () => 'John';
 
     const value = () => 123;
 
-    const hash = (value) => crypto.createHash('md5').update(value).digest('hex');
+    const hash = (value) => parseInt(crypto.createHash('md5').update(value).digest('hex'), 16) % 100000000;
 
 })

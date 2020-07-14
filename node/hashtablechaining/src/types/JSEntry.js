@@ -16,7 +16,7 @@ class JSEntry {
 
     get value() { return this.#mValue; }
 
-    get hash() { return this.#mHash === null ? this.#mHash = this.#hash(this.key) : mHash; }
+    get hash() { return this.#mHash === null ? this.#mHash = this.#hash(this.key) : this.#mHash; }
 
     equal = (that) => this.hash === that.hash && this.key === that.key;
 
@@ -24,7 +24,7 @@ class JSEntry {
     // Private Members **
     //*******************
 
-    #hash = (value) => crypto.createHash('md5').update(this.key).digest('hex');
+    #hash = (value) => parseInt(crypto.createHash('md5').update(this.key).digest('hex'), 16) % 100000000;
 }
 
 module.exports = JSEntry;
